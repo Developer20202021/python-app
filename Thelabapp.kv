@@ -1,0 +1,34 @@
+#:kivy 1.0
+
+Wbox:
+
+<Wbox>:
+    orientation:'vertical'
+    Button:
+        text:'hello'
+    MainWidget:
+    BoxLayout:
+        orientation:'horizontal'
+        spacing:10
+        Button:
+            text:'hello'
+            on_press:self.on_button_click
+        Button:
+            text:'hello'
+            on_press:self.click
+        Button:
+            id:btn
+            text:'hello'
+            on_press:self.click
+    
+    
+
+<MainWidget>:
+    Button:
+        text:'hello'
+        size:'140dp','50dp'
+        pos: '100dp', '100dp'
+    Label:
+        text:'hello'
+        color:0, 1, 1,1
+    
